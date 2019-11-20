@@ -1,0 +1,29 @@
+{
+  "name": "tapsearch",
+  "version": "1.0.0",
+  "description": "Searching Tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pprathameshmore/TapSearch.git"
+  },
+  "keywords": [
+    "tapsearch",
+    "prathameshmore"
+  ],
+  "author": "Prathamesh More",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pprathameshmore/TapSearch/issues"
+  },
+  "homepage": "https://github.com/pprathameshmore/TapSearch#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.7.4",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.12"
+  }
+}
