@@ -20,17 +20,20 @@ mongoose.connect(MONGODB_URL, {
     }
 });
 
-app.set('PORT', (process.env.PORT || 3000));
-
 app.use((request, response, next) => {
     response.header("Access-Control-Allow-Origin", "*");
     next();
 });
+
+app.set('PORT', (process.env.PORT || 3000));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
+app.get('/', (request, response, next) => {
+    response.redirect('/home/index');
+});
 app.use('/home', homeRouter);
 
 app.use((resquest, response, next) => {

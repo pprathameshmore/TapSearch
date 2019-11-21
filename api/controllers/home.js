@@ -85,7 +85,7 @@ exports.search_post = (request, response, next) => {
 
 exports.clear_get = (request, response, next) => {
     try {
-        Paragraph.remove({}).exec().then(paragraphs => {
+        Paragraph.deleteMany({}).exec().then(paragraphs => {
             response.status(200).render('infopage');
         }).catch(error => {
             return response.status(404).json({
