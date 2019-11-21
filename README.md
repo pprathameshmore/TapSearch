@@ -9,15 +9,14 @@ Simple program called TapSearch that achieves these objectives.
 
 [![Build Status](https://travis-ci.com/pprathameshmore/TapSearch.svg?token=fx8WzCoHNssGRphWA7zD&branch=master)](https://travis-ci.com/pprathameshmore/TapSearch)
 ![GitHub top language](https://img.shields.io/github/languages/top/pprathameshmore/tapsearch?style=flat)
-![GitHub](https://img.shields.io/github/license/pprathameshmore/tapsearch?style=flat)
 ![GitHub last commit](https://img.shields.io/github/last-commit/pprathameshmore/tapsearch?style=flat)
 
 Base URL : https://tapsearch-app.herokuapp.com/
 
 ## Table of Contents
- [Save paragraphs](#save-paragraphs)
- [Search words in paragraphs](#search-words-in-paragraphs)
- [Remove paragraphs](#remove-paragraphs)
+ * [Save paragraphs](#save-paragraphs)
+ * [Search words in paragraphs](#search-words-in-paragraphs)
+ * [Remove paragraphs](#remove-paragraphs)
 
 
  #### Reference : https://docs.mongodb.com/manual/core/index-text/#create-text-index
