@@ -12,7 +12,7 @@ Simple program called TapSearch that achieves these objectives.
 ![GitHub](https://img.shields.io/github/license/pprathameshmore/tapsearch?style=flat)
 ![GitHub last commit](https://img.shields.io/github/last-commit/pprathameshmore/tapsearch?style=flat)
 
-Base URL : https://tapsearch.herokuapp.com
+Base URL : https://tapsearch-app.herokuapp.com/
 
 ## Table of Contents
  [Save paragraphs](#save-paragraphs)
@@ -20,7 +20,7 @@ Base URL : https://tapsearch.herokuapp.com
  [Remove paragraphs](#remove-paragraphs)
 
 
- ### Reference : https://docs.mongodb.com/manual/core/index-text/#create-text-index
+ #### Reference : https://docs.mongodb.com/manual/core/index-text/#create-text-index
  ```db.paragraphs.createIndex( { tags: "text" } )```
 
 ## API Documentation
@@ -31,7 +31,7 @@ Index a given document (After having split the input into paragraphs a.k.a docum
 
 #### Request
 
-``` https://tapsearch.herokuapp.com/home/index ```
+``` https://tapsearch-app.herokuapp.com/home/index ```
 
 ``` 
 Headers
@@ -59,7 +59,7 @@ Given a word, search for it and retrieve the top 10 paragraphs (Documents) that 
 
 #### Request
 
-``` https://tapsearch.herokuapp.com/home/search ```
+``` https://tapsearch-app.herokuapp.com/home/search ```
 
 ``` 
 Headers
@@ -91,7 +91,7 @@ Clear the index and all indexed documents.
 
 #### Request
 
-``` https://tapsearch.herokuapp.com/home/clear ```
+``` https://tapsearch-app.herokuapp.com/home/clear ```
 
 ``` 
 Headers
