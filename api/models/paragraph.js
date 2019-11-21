@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const ParagraphScheme = new mongoose.Schema({
     text: {
         type: String,
-        required: true
+        required : true
     },
     tags: {
         type: [String],

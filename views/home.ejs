@@ -1,0 +1,28 @@
+<% include ./partials/header %>
+
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">TapSearch!</h1>
+        <p class="lead">This simple TapSearch app.</p>
+        <hr><a href="/home/search">
+            <button class="btn btn-warning">Search</button>
+        </a><a href="/home/clear">
+            <button class="btn btn-danger" type="reset">Clear</button>
+        </a>
+    </div>
+
+    <div>
+        <form action="/home/index" method="post">
+            <div class="form-group">
+                <label for="InputParagraphs">Paragraphs</label>
+                <textarea class="form-control" id="InputParagraphs" name="paragraphs" rows="10" required></textarea>
+                <small class="form-text text-muted">Each paragraph should be separated by two
+                    spaces.</small>
+            </div>
+            <button class="btn btn-success" type="submit">Submit</button>
+            <button class="btn btn-warning" type="reset">Reset</button>
+        </form>
+    </div>
+</div>
+
+<% include ./partials/footer %>
