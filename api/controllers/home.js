@@ -1,4 +1,5 @@
 const Paragraph = require('../models/paragraph');
+const mongoose = require('mongoose');
 
 exports.home_get = (request, response, next) => {
     response.render('home');
@@ -33,6 +34,8 @@ exports.home_post = (request, response, next) => {
 
 exports.search_get = (request, response, next) => {
     try {
+
+        Paragraph.collection.createIndex({ tags: 'text' });
         response.status(200).render('search', {
             paragraphs: [{
                 "text": "Nothing to show here."
@@ -88,11 +91,12 @@ exports.clear_get = (request, response, next) => {
         Paragraph.deleteMany({}).exec().then(paragraphs => {
             response.status(200).render('infopage');
         }).catch(error => {
-            return response.status(404).json({
+            response.status(404).json({
                 message: "Something went wrong",
                 error
             });
         });
+        Paragraph.collection.drop();
     } catch (error) {
         console.log(error);
     }
