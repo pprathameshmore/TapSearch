@@ -2,14 +2,22 @@
 <img src="/assets/icon/logo_tap_trans.png" width="200"></img>
 
 # TapSearch (MVC)
-Simple program called TapSearch that achieves these objectives.
 
-1.	It takes in multiple paragraphs of text, assigns a unique ID To each paragraph and stores the words to paragraph mappings on an inverted index. This is similar to what elasticsearch does. This paragraph can also be referred to as a ‘document’
-2.	Given a word to search for, it lists out the top 10 paragraphs in which the word is present
+### A simple program called TapSearch that takes in multiple paragraphs of text, assigns a unique ID To each paragraph and stores the words to paragraph mappings on an inverted index. This is similar to what elasticsearch does. This paragraph can also be referred to as a ‘document’. Given a word to search for, it lists out the top 10 paragraphs in which the word is present.
 
-[![Build Status](https://travis-ci.com/pprathameshmore/TapSearch.svg?token=fx8WzCoHNssGRphWA7zD&branch=master)](https://travis-ci.com/pprathameshmore/TapSearch)
-![GitHub top language](https://img.shields.io/github/languages/top/pprathameshmore/tapsearch?style=flat)
-![GitHub last commit](https://img.shields.io/github/last-commit/pprathameshmore/tapsearch?style=flat)
+1. Tokenize to words by splitting at whitespace
+2. Convert all words to lowercase
+3. Index these words against the documents they are from
+4. Generate a unique ID for every document that is index
+5. A paragraph is defined by two newline characters
+
+Tech stack:
+* NodeJS
+* Express
+* MongoDB
+* Postman
+* Horeku
+
 
 Base URL : https://tapsearch-app.herokuapp.com/
 
